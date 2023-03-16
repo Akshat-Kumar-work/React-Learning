@@ -1,7 +1,0 @@
-
-function ProductItem (props){
-
-    return{
-       
-    }
-}

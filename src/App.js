@@ -1,107 +1,63 @@
-import './App.css';
-import List from './components/item'; //importing List component from a item file present in component folder
-import Products from './components/products';
+ import ItemDate from './components/ItemDate.js';
+ import Item from './components/Item.js';
+import Card from './components/Card.js';
 function App() {
 
-
-
-  //ek array k andar object bna rkhe hai usme listname aur listdate ki values hai
   const response = [
+   
     {
-      listname:"grocery list",
-      listdate:"14 march 23"
-    },
-    {
-      listname:"shopping list",
-      listdate:"23 march 23"
-    }
+      itemname:"nirma",
+      Date:"20",
+      month :"june",
+      year:"1998"
 
-  ];
-
-
-//products name array having following values
-  const products = [
-
-    {
-      id: 'p1',
-      title:'Nirma',
-      amount : 100,
-      date: new Date(2021,8,10),
     },
 
     {
-      id: 'p2',
-      title:'surf excel',
-      amount : 200,
-      date: new Date(2021,2,2),
+      itemname:"tide",
+      Date:"20",
+      month :"june",
+      year:"1998"
+
     },
 
     {
-      id: 'p3',
-      title:'Tide',
-      amount : 130,
-      date: new Date(2021,12,28),
+      itemname:"surf excel ",
+      Date:"20",
+      month :"june",
+      year:"1998"
+
     },
 
-    {
-      id: 'p4',
-      title:'ariel',
-      amount : 450,
-      date: new Date(2021,5,5),
-
-    }
-
-  ];
 
 
-
-
+  ]
   return ( 
     
     //hamesha return karty hue ek single element k andar hona chaie sara code
     <div>
 
-  
-  {/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ }
- 
- {/* list component m jo naam property hai usme response naam  k array m jo 0th aur 1th index par object hai usko daldo  */}
 
-  <List 
-   name={response[0].listname}
-   date={response[0].listdate} >
-   {/* , jo hum content dalty hai component k andar vo by default visible nahi hota 
-   usko visible krane k lie hume {props.children} ko return krwana pdega component m */}
-     item first 
-   </List>
+    <Card>
 
+    <Item name={response[0].itemname} > item name ka children hu m</Item>
+    <ItemDate day={response[0].day} month={response[0].month} year={response[0].year}></ItemDate>
 
-  <List 
-  name={response[1].listname}
-   date={response[1].listdate} >
-   </List>
+    <Item name={response[1].itemname}></Item>
+    <ItemDate day={response[1].day} month={response[1].month} year={response[1].year}> </ItemDate>
 
+    <Item name={response[2].itemname}></Item>
+    <ItemDate day={response[2].day} month={response[2].month} year={response[2].year}></ItemDate>
+    
 
-
-
-   
-    <List name="avnish"></List>  {/* yaha humne List component ki properties ko pass kiya  hai  */}
-    <List name="rohan"></List>
-    <List name="wil"></List>
-
-    <List date="1 march 23"></List>
-<div className="App">
-       hello ji
-      </div>
-  {/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/ }
-
-  {/* passing products through items to Products component */}
-   <Products items={products}  ></Products>
-
+    </Card>
+    
+    
 
     </div>
     
    
   );
-}
+} 
 
 export default App;
