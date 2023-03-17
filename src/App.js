@@ -2,6 +2,7 @@
 //  import Item from './components/Item.js';
 // import Card from './components/Card.js';
 import Products from "./components/Products";
+import NewProduct from "./components/NewProduct";
 
 function App() {
 
@@ -38,25 +39,25 @@ function App() {
   {
     id:'p1',
     title:'Nirma',
-    amount:100,
+    amount:100 + "ruppes",
     date:new Date(2021,8,10),
   },
   {
     id:'p2',
     title:'Surf excel',
-    amount:102,
+    amount:102 + "ruppes",
     date:new Date(2021,8,10),
   },
   {
     id:'p3',
     title:'Tide',
-    amount:103,
+    amount:103  + "ruppes",
     date:new Date(2021,8,10),
   },
   {
     id:'p4',
     title:'ariel',
-    amount:104,
+    amount:104  + "ruppes" ,
     date:new Date(2021,8,10),
   },
   ]; 
@@ -83,9 +84,12 @@ function App() {
     
     
     {/* Products components k lie items prop m products pass kardiye */}
-    
+
     <Products items={products}></Products>
 
+
+    <NewProduct></NewProduct>
+    
     </div>
     
    
