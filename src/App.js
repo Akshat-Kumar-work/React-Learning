@@ -2,7 +2,6 @@
  //  import Item from './components/Item.js';
 // import Card from './components/Card.js';
 import Products from "./components/Products";
-
 import Parent from "./passingValueForComponent/Parent";
 
 function App() {
@@ -91,11 +90,10 @@ function App() {
 
     <Products items={products}></Products>
 
-
-    
-
-
       <Parent></Parent>
+
+
+      
     </div>
     
    
