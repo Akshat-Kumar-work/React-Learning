@@ -3,7 +3,7 @@ import {useState} from 'react';
 
 
 
-function ProductForm(){
+function ProductForm(props){
 
    const [newtitle,setTitle] = useState('');
    const [newdate,setDate] = useState('');
@@ -27,8 +27,8 @@ function ProductForm(){
             date:newdate,
         };
 
-        console.log(productData)
-
+        //console.log(productData)
+        props.onsaveProduct(productData)
         setTitle('')
         setDate('')
     }
@@ -42,7 +42,7 @@ function ProductForm(){
         </div>
       
         <div className="new-product-date">
-        <label>Date</label>
+        <label>Date</label>  
         <input type='date' value={newdate} onChange={dateChangeHandler} min='2023-01-01' max='2023-12-12'></input>
         </div>
         

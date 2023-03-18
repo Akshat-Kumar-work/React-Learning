@@ -62,6 +62,9 @@ function App() {
   },
   ]; 
 
+  function printProductData(data){
+    console.log(data);
+  }
 
   return ( 
     
@@ -87,8 +90,8 @@ function App() {
 
     <Products items={products}></Products>
 
-
-    <NewProduct></NewProduct>
+    {/* humne ek function pass kardia prop k andar */}
+    <NewProduct printProduct={printProductData} ></NewProduct>
     
     </div>
     
