@@ -1,19 +1,19 @@
 import './NewProduct.css';
 import ProductForm from './ProductForm';
-function NewProduct(prop){
+function NewProduct(){
     
     function saveProduct(){
         console.log("i am inside new product");
-        console.log(product);
+        
 
         //calling parent function
-        prop.printProduct(product)
+       // prop.printProduct(product)
     }
 return(<div className='new-product'>
  {/* putting form into NewProduct */}
-    <ProductForm onsaveProduct={saveProduct}></ProductForm>
+    <ProductForm ></ProductForm>
 
-</div>)
+</div> )
 }
 
 export default NewProduct;
