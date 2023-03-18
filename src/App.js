@@ -2,8 +2,8 @@
  //  import Item from './components/Item.js';
 // import Card from './components/Card.js';
 import Products from "./components/Products";
-import NewProduct from "./components/NewProduct";
-import Parent from "./components/Parent";
+
+import Parent from "./passingValueForComponent/Parent";
 
 function App() {
 
@@ -91,8 +91,7 @@ function App() {
 
     <Products items={products}></Products>
 
-    {/* humne ek function pass kardia prop k andar */}
-    <NewProduct printProduct={printProductData} ></NewProduct>
+
     
 
 

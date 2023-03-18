@@ -9,15 +9,6 @@ const Productitem = (props)=>{
 
 const amount = props.amount;
  
-
-
-const [title,setTitle]=useState(props.title)
-
-const clickHandler = ()=>{
-    console.log("clicked on button")
-    setTitle("popcorn")
-}
-
  
     return(
         
@@ -26,12 +17,12 @@ const clickHandler = ()=>{
         <ProductDate date={props.date}/>
 
         <div className='product-item-decription'>
-            <h2>{title}</h2>
+            <h2>{props.title}</h2>
         </div>
 
         <div>{amount}</div>
             
-        <button onClick={clickHandler}>add to cart</button>
+        
         </Card>
         
     );
