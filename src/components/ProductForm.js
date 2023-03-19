@@ -4,14 +4,15 @@ function ProductForm(){
 
 
     // it is handling multiple state by creating diff state for each event
-    const[newtitle,setTitle] = useState('')
+   const[newtitle,setTitle] = useState('')
     const[newdate,setDate] = useState('') 
-
+   
     function titlechangeHandler(event){
        // console.log("title change hora hai")
        // console.log(event.target.value) //isme single character track hore hai , jo change hore hai input m
        setTitle(event.target.value);
        //console.log(event.target.value)
+       
     }
 
     function datechangeHandler(event){
@@ -39,7 +40,7 @@ function ProductForm(){
 
     return(
         // jab form ko submit kia jaega submitHandler call ho jaega
-        <form className="form" onSubmit={submitHandler}>
+        <form className="form" onSubmit={submitHandler} >
 
         <div className='new-product__controls'>
             

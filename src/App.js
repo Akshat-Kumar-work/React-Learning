@@ -63,9 +63,7 @@ function App() {
   },
   ]; 
 
-  function printProductData(data){
-    console.log(data);
-  }
+
 
   return ( 
     
@@ -91,10 +89,9 @@ function App() {
 
     <Products items={products}></Products>
 
-      <Parent></Parent>
-
       <NewProduct></NewProduct>
       
+     <Parent></Parent>
     </div>
     
    
