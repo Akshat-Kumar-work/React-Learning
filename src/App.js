@@ -1,6 +1,7 @@
  //import ItemDate from './components/ItemDate.js';
  //  import Item from './components/Item.js';
 // import Card from './components/Card.js';
+import NewProduct from "./components/NewProduct";
 import Products from "./components/Products";
 import Parent from "./passingValueForComponent/Parent";
 
@@ -92,7 +93,7 @@ function App() {
 
       <Parent></Parent>
 
-
+      <NewProduct></NewProduct>
       
     </div>
     

@@ -4,8 +4,8 @@ function Parent (){
 
    return(
 
-      // passing value to child component
-    <Child childname="this value is passes through parent to child component using props"/>
+      // passing value to child component, communication from parent to child component
+    <Child childname="this statement is passes through parent to child component using props"/>
    );
 }
 
