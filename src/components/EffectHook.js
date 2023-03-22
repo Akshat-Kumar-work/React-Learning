@@ -31,7 +31,7 @@ function EffectHook (){
     }
         },
         //dependency list parameter
-        [text] );
+        [text] ); 
 
     return(
         <div>

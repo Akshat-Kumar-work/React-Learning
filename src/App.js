@@ -5,6 +5,7 @@ import EffectHook from "./components/EffectHook";
 import NewProduct from "./components/NewProduct";
 import Products from "./components/Products";
 import Parent from "./passingValueForComponent/Parent";
+import Window from "./components/Window";
 
 function App() {
 
@@ -96,6 +97,10 @@ function App() {
 
 
      <EffectHook></EffectHook>
+
+
+     <Window></Window>
+
     </div>
     
    
