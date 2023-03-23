@@ -1,6 +1,7 @@
 import {useEffect, useState } from "react";
 function EffectHook (){
     const [text,setText] = useState('');
+    
     function changeHandler(event){
         console.log(text)
         setText(event.target.value)
